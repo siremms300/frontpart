@@ -26,9 +26,7 @@ mongoose
 // apply middlewares
 app.use(cors(
   {
-    origin: ['https://deploy-mern-lwhq.vercel.app'],
-    methods: ['POST', 'GET'],
-    credentials: true
+    origin: ['https://localhost:3000', "https://scovers-directory-app.onrender.com"],
   }
 ));
 app.use(express.json({ limit: "5mb" }));
